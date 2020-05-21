@@ -20,8 +20,14 @@ function fitWithinVal(array, number){
   return newArray;
 }
 
-function getAllNamesShorterThan(){
-
+function getAllNamesShorterThan(arr, num){
+  const newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length < num) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
 }
 
 function makeLabel(){
