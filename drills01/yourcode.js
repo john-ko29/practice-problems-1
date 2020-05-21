@@ -30,6 +30,10 @@ function getAllNamesShorterThan(arr, num){
   return newArr;
 }
 
-function makeLabel(){
-
+function makeLabel(info){
+  console.log(info)
+  console.log(info["home address"])
+  const name = `${info.greeting} ${info.givenName} ${info.familyName}\n`
+  const address = `${info["home address"].streetNumber} ${info["home address"].streetName}\n${info["home address"].city}, ${info["home address"].state} ${info["home address"].zip}`;
+  return name + address
 }
