@@ -32,13 +32,27 @@ function getMinMaxMean(arr){
     }
     mean += arr[i]
   }
-  console.log(min, max, mean/arr.length)
   obj.min = min;
   obj.max = max;
   obj.mean = mean/arr.length;
   return obj;
 }
 
-function findMode(){
-
+function findMode(arr){
+  const obj = {};
+  let count = 0;
+  let max = 0;
+  for(let i = 0; i < arr.length; i++) {
+    if(obj[arr[i]] === undefined) {
+      obj[arr[i]] = 1;
+    } else {
+      obj[arr[i]]  +=  1;
+     if (obj[arr[i]] >= count)   {
+        count = obj[arr[i]]
+        max =  arr[i]
+     }
+    }
+  }
+  console.log(obj)
+  return max;
 }
