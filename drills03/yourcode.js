@@ -5,7 +5,7 @@ function getPath(string){
   return arr;
 }
 
-function getPathParts(){
+function getPathParts(string){
 
 }
 
