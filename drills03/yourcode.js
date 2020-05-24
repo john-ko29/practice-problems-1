@@ -1,18 +1,19 @@
 
 
-function getPath(){
+function getPath(string){
+  const arr = string.split("/")
+  return arr;
+}
+
+function getPathParts(string){
 
 }
 
-function getPathParts(){
+function getCapitalCount(arr){
 
 }
 
-function getCapitalCount(){
-
-}
-
-function correctCalcChecker(){
+function correctCalcChecker(arr){
 
 }
 
