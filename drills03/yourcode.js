@@ -9,11 +9,11 @@ function getPathParts(string){
 
 }
 
-function getCapitalCount(){
+function getCapitalCount(arr){
 
 }
 
-function correctCalcChecker(){
+function correctCalcChecker(arr){
 
 }
 
